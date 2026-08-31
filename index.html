@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amel Kolasević — CV</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="60e830ad-1af1-402f-8269-e2037281eca1"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+
+</head>
+
+
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">&lt;/&gt;</a>
+      <ul class="nav-links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#skills"   onclick="closeMobile()">Skills</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#about"    onclick="closeMobile()">About</a>
+    <a href="#contact"  onclick="closeMobile()">Contact</a>
+  </div>
+
+  <main>
+
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-content fade-in">
+          <div class="hero-badge">Hi, I'm</div>
+          <h1 class="hero-name">Amel Kolasević</h1>
+          <p class="hero-role">Software Engineering student</p>
+          <div class="hero-socials">
+            <a class="hero-social-link" href="https://www.linkedin.com/in/amel-kolasevi%C4%87-7a7657359/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a class="hero-social-link" href="https://github.com/amel555k" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a class="hero-social-link" href="mailto:amel.kolasevic.24@size.ba" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i> Email
+            </a>
+          </div>
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">
+              View Projects <i data-lucide="arrow-right" width="16" height="16"></i>
+            </a>
+            <a href="#" class="btn-outline" id="downloadCvBtn" download>
+              Download CV <i data-lucide="download" width="16" height="16"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-in" style="animation-delay:0.15s">
+          <div class="hero-code-card">
+            <div class="code-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</div>
+            <div class="code-line code-indent"><span class="code-var">name</span>: <span class="code-string">"Amel Kolasević"</span>,</div>
+            <div class="code-line code-indent"><span class="code-var">role</span>: <span class="code-string">"Software Engineer student"</span>,</div>
+            <div class="code-line code-indent"><span class="code-var">skills</span>: [<span class="code-string">"C#"</span>, <span class="code-string">"Kotlin"</span>, <span class="code-string">"Figma"</span>],</div>
+            <div class="code-line code-indent"><span class="code-var">available</span>: <span class="code-keyword">true</span>,</div>
+            <div class="code-line">};</div>
+            <br>
+            <div class="code-line"><span class="code-comment">// Open to new opportunities</span></div>
+            <div class="code-line"><span class="code-keyword">export default</span> <span class="code-var">developer</span>;</div>
+          </div>
+          <div class="dot-grid dot-grid-hero"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <span class="section-label">What I use</span>
+      <h2 class="section-title">Skills</h2>
+      <hr class="section-divider" />
+      <div class="skills-grid fade-in">
+        <div class="skill-chip"><i class="devicon-csharp-plain colored"></i> C#</div>
+        <div class="skill-chip"><i class="devicon-kotlin-plain colored"></i> Kotlin</div>
+        <div class="skill-chip"><i class="devicon-figma-plain colored"></i> Figma</div>
+        <div class="skill-chip"><i class="devicon-firebase-plain colored"></i> Firebase</div>
+        <div class="skill-chip"><i class="devicon-python-plain colored"></i> Python</div>
+        <div class="skill-chip"><i class="devicon-react-original colored"></i> React</div>
+        <div class="skill-chip"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+        <div class="skill-chip"><i class="devicon-nodejs-plain colored"></i> Node.js</div>
+        <div class="skill-chip"><i class="devicon-linux-plain"></i> Linux</div>
+        <div class="skill-chip"><i class="devicon-git-plain colored"></i> Git</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <span class="section-label">What I've built</span>
+      <h2 class="section-title">Projects</h2>
+      <hr class="section-divider" />
+
+      <div class="projects-grid fade-in">
+
+        <div class="project-card" onclick="handleCardClick(event, this)">
+          <div class="project-card-header">
+        <div class="project-icon">
+          <img src="images/roadflow/ikonica.png" alt="RoadFlow icon" width="64" height="64">
+        </div>
+            <div class="project-info">
+              <h3>RoadFlow</h3>
+              <div class="project-desc-lines">
+                <div class="project-desc-line"></div>
+                <div class="project-desc-line"></div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Kotlin</span>
+                <span class="tag">Jetpack Compose</span>
+                <span class="tag">Android</span>
+                <span class="tag">MapTiler</span>
+              </div>
+            </div>
+            <div class="project-arrow">
+              <i data-lucide="arrow-right" width="20" height="20"></i>
+            </div>
+          </div>
+
+          <a class="project-github-link" href="https://github.com/amel555k/RoadFlow-V2" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+
+          <div class="project-details">
+            <div class="project-details-inner">
+              <div class="project-details-content">
+                <div class="project-details-body">
+                  <div class="project-details-text">
+                    <p>This application was developed to provide drivers with reliable, real-time information on both mobile and stationary speed cameras. The core of the app is built around a verified data source that undergoes automatic daily updates, ensuring the information stays current without manual intervention. Users can navigate through a clean list view of active locations or switch to a dedicated tracking mode for a more dynamic experience while on the road. To maximize accessibility, a custom home screen widget was implemented, allowing users to pin their two favorite cities for instant monitoring at a glance.</p>
+                  </div>
+                  <div class="project-slider-col" onclick="event.stopPropagation()">
+                    <div class="project-slider" data-count="5">
+                      <div class="slider-track-wrapper">
+                        <div class="slider-track">
+                          <img src="images/roadflow/trackingmode.jpg"  alt="RoadFlow tracking mode" />
+                          <img src="images/roadflow/mapall.jpg"    alt="RoadFlow all radars" />
+                          <img src="images/roadflow/list.jpg"  alt="RoadFlow listview" />
+                          <img src="images/roadflow/widget.jpg"  alt="RoadFlow homescreen widget" />
+                          <img src="images/roadflow/pushnot.jpg"  alt="RoadFlow push notification" />
+                        </div>
+                      </div>
+                      <button class="slider-btn prev" onclick="slideMove(event, this, -1)"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button class="slider-btn next" onclick="slideMove(event, this,  1)"><i class="fa-solid fa-chevron-right"></i></button>
+                      <div class="slider-dots">
+                        <div class="slider-dot active" onclick="slideTo(event, this, 0)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 1)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 2)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 3)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 4)"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="project-card" onclick="handleCardClick(event, this)">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <img src="images/fstudionina/ikonica.png" alt="FStudio Nina icon" width="64" height="64">
+            </div>
+            <div class="project-info">
+              <h3>Frizerski studio Nina</h3>
+              <div class="project-desc-lines">
+                <div class="project-desc-line"></div>
+                <div class="project-desc-line"></div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Kotlin</span>
+                <span class="tag">Android</span>
+                <span class="tag">Jetpack Compose</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Google Drive API</span>
+              </div>
+            </div>
+            <div class="project-arrow">
+              <i data-lucide="arrow-right" width="20" height="20"></i>
+            </div>
+          </div>
+
+          <a class="project-github-link" href="https://github.com/amel555k/Frizerski-studio-Nina" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+
+          <div class="project-details">
+            <div class="project-details-inner">
+              <div class="project-details-content">
+                <div class="project-details-body">
+                  <div class="project-details-text">
+                    <p>Frizerski studio Nina is a Kotlin Android app designed to replace paper scheduling for a local hair salon...</p>
+                    <p>Appointments are persisted in Firebase Firestore with real-time updates...</p>
+                  </div>
+
+                  <div class="project-slider-col" onclick="event.stopPropagation()">
+                    <div class="project-slider" data-count="7">
+                      <div class="slider-track-wrapper">
+                        <div class="slider-track">
+                          <img src="images/fstudionina/homepage.jpg" alt="Fstudio nina homepage" />
+                          <img src="images/fstudionina/dayschedulesheet.jpg" alt="Fstudio nina day schedule sheet" />
+                          <img src="images/fstudionina/clientlist.jpg" alt="Fstudio Nina client list" />
+                          <img src="images/fstudionina/appointmentdetail.jpg" alt="Fstudio Nina appointment details" />
+                          <img src="images/fstudionina/yearly.jpg" alt="Fstudio Nina yearly statistics" />
+                          <img src="images/fstudionina/monthly.jpg" alt="Fstudio Nina monthly statistics" />
+                          <img src="images/fstudionina/weekly.jpg" alt="Fstudio Nina weekly statistics" />
+                        </div>
+                      </div>
+                      <button class="slider-btn prev" onclick="slideMove(event, this, -1)"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button class="slider-btn next" onclick="slideMove(event, this,  1)"><i class="fa-solid fa-chevron-right"></i></button>
+                      <div class="slider-dots">
+                        <div class="slider-dot active" onclick="slideTo(event, this, 0)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 1)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 2)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 3)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 4)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 5)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 6)"></div>
+                      </div>
+                    </div>
+                  </div> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="handleCardClick(event, this)">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i data-lucide="smartphone" width="32" height="32"></i>
+            </div>
+            <div class="project-info">
+              <h3>Sehara Cloud</h3>
+              <div class="project-desc-lines">
+                <div class="project-desc-line"></div>
+                <div class="project-desc-line"></div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Kotlin</span>
+                <span class="tag">Jetpack Compose</span>
+                <span class="tag">C#</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Linux server</span>
+                <span class="tag">Cloudflare</span>
+              </div>
+            </div>
+            <div class="project-arrow">
+              <i data-lucide="arrow-right" width="20" height="20"></i>
+            </div>
+          </div>
+
+          <a class="project-github-link" href="https://github.com/SamerKolasevic29/SeharaCloud" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+
+          <div class="project-details">
+            <div class="project-details-inner">
+              <div class="project-details-content">
+                <div class="project-details-body">
+                  <div class="project-details-text">
+                    <p>In progress...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="handleCardClick(event, this)">
+          <div class="project-card-header">
+             <div class="project-icon">
+              <img src="images/easypeasy/ikonica.png" alt="Easy Peasy icon" width="64" height="64">
+            </div>
+            <div class="project-info">
+              <h3>Easy Peasy</h3>
+              <div class="project-desc-lines">
+                <div class="project-desc-line"></div>
+                <div class="project-desc-line"></div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">.NET MAUI</span>
+                <span class="tag">C#</span>
+                <span class="tag">XAML</span>
+                <span class="tag">Firebase</span>
+              </div>
+            </div>
+            <div class="project-arrow">
+              <i data-lucide="arrow-right" width="20" height="20"></i>
+            </div>
+          </div>
+
+          <a class="project-github-link" href="https://github.com/amel555k/EasyPeasyOrderApp" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+
+          <div class="project-details">
+            <div class="project-details-inner">
+              <div class="project-details-content">
+                <div class="project-details-body">
+                  <div class="project-details-text">
+                    <p>Easy Peasy is a mobile food ordering app designed for a smooth and intuitive experience. Users can browse available menus, place orders with ease, and manage their personal profile. A dedicated recent orders section lets users revisit their order history and reorder previous meals in just a few taps.</p>
+                  </div>
+                  <div class="project-slider-col" onclick="event.stopPropagation()">
+                    <div class="project-slider" data-count="9">
+                      <div class="slider-track-wrapper">
+                        <div class="slider-track">
+                          <img src="images/easypeasy/loginpage.jpg" alt="Easy Peasy loginpage" />
+                          <img src="images/easypeasy/homepage.jpg" alt="Easy Peasy homepage" />
+                          <img src="images/easypeasy/ponudapage.jpg" alt="Easy Peasy menupage" />
+                          <img src="images/easypeasy/dogspage.jpg" alt="Easy Peasy hotdogs page" />
+                          <img src="images/easypeasy/detailspage.jpg" alt="Easy Peasy item details" />
+                          <img src="images/easypeasy/recentpage.jpg" alt="Easy Peasy recent orders page" />
+                          <img src="images/easypeasy/orderpage.jpg" alt="Easy Peasy order page" />
+                          <img src="images/easypeasy/aboutpage.jpg" alt="Easy Peasy about page" />
+                          <img src="images/easypeasy/profilepage.jpg" alt="Easy Peasy profile page" />
+                        </div>
+                      </div>
+                      <button class="slider-btn prev" onclick="slideMove(event, this, -1)"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button class="slider-btn next" onclick="slideMove(event, this,  1)"><i class="fa-solid fa-chevron-right"></i></button>
+                      <div class="slider-dots">
+                        <div class="slider-dot active" onclick="slideTo(event, this, 0)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 1)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 2)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 3)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 4)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 5)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 6)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 7)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 8)"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="handleCardClick(event, this)">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i data-lucide="monitor" width="32" height="32"></i>
+            </div>
+            <div class="project-info">
+              <h3>Tvoja Maja</h3>
+              <div class="project-desc-lines">
+                <div class="project-desc-line"></div>
+                <div class="project-desc-line"></div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+              </div>
+            </div>
+            <div class="project-arrow">
+              <i data-lucide="arrow-right" width="20" height="20"></i>
+            </div>
+          </div>
+
+          <a class="project-github-link" href="https://github.com/amel555k/Tvoja-Maja" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+
+          <div class="project-details">
+            <div class="project-details-inner">
+              <div class="project-details-content">
+                <div class="project-details-body">
+                  <div class="project-details-text">
+                    <p>Tvoja Maja is a web-based clothing store built around a simple and intuitive shopping experience. Customers can browse available t-shirts, hoodies, and polo shirts, customize their order through a dedicated editor, and submit it with ease. Each registered user has access to their own profile where they can review past orders, while a contact form allows them to leave feedback or suggestions directly to the team.</p>
+                    <p>On the administrative side, the app includes a fully featured admin panel that provides an overview of all placed orders along with key order statistics. Admins can monitor and update the availability status of individual items and read messages submitted by users — giving full control over both inventory and customer communication.</p>
+                  </div>
+                  <div class="project-slider-col" onclick="event.stopPropagation()">
+                    <div class="project-slider" data-count="5">
+                      <div class="slider-track-wrapper">
+                        <div class="slider-track">
+                          <img src="images/tvojamaja/homepage1Desktop.png" alt="Tvoja Maja homepage" />
+                          <img src="images/tvojamaja/editorpage.png" alt="Tvoja Maja cloth editor" />
+                          <img src="images/tvojamaja/adminpanel1Desktop.png" alt="Tvoja Maja adminpanel order list" />
+                          <img src="images/tvojamaja/adminpanel2Desktop.png" alt="Tvoja Maja items in storage" />
+                          <img src="images/tvojamaja/adminpanel3Desktop.png" alt="Tvoja Maja analytics" />
+                        </div>
+                      </div>
+                      <button class="slider-btn prev" onclick="slideMove(event, this, -1)"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button class="slider-btn next" onclick="slideMove(event, this,  1)"><i class="fa-solid fa-chevron-right"></i></button>
+                      <div class="slider-dots">
+                        <div class="slider-dot active" onclick="slideTo(event, this, 0)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 1)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 2)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 3)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 4)"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="handleCardClick(event, this)">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i data-lucide="blocks" width="32" height="32"></i>
+            </div>
+            <div class="project-info">
+              <h3>LaptopiTravnik</h3>
+              <div class="project-desc-lines">
+                <div class="project-desc-line"></div>
+                <div class="project-desc-line"></div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Inkscape</span>
+                <span class="tag">SketchUp</span>
+              </div>
+            </div>
+            <div class="project-arrow">
+              <i data-lucide="arrow-right" width="20" height="20"></i>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="project-details-inner">
+              <div class="project-details-content">
+                <div class="project-details-body">
+                  <div class="project-details-text">
+                    <p>LaptopiTravnik is a local shop based in Travnik specializing in refurbished laptops. As part of a school project, I was responsible for the visual identity of the business — designing a two-sided promotional brochure that presents the shop's offer in a clean and professional layout, built entirely in Inkscape.</p>
+                    <p>Alongside the brochure, I modeled a 3D representation of a ThinkPad laptop in SketchUp, complete with a custom LaptopiTravnik sticker, intended to serve as a visual asset for the brand's promotional materials.</p>
+                  </div>
+                  <div class="project-slider-col" onclick="event.stopPropagation()">
+                    <div class="project-slider" data-count="4">
+                      <div class="slider-track-wrapper">
+                        <div class="slider-track">
+                          <img src="images/laptopitravnik/brosuraPrvaStrana.svg" alt="LaptopiTravnik brochure front side" />
+                          <img src="images/laptopitravnik/brosuraDrugaStrana.svg" alt="LaptopiTravnik brochure back side" />
+                          <img src="images/laptopitravnik/laptop1.png" alt="LaptopiTravnik ThinkPad 3D model" />
+                          <img src="images/laptopitravnik/laptop2.png" alt="LaptopiTravnik ThinkPad 3D model keyboard" />
+                        </div>
+                      </div>
+                      <button class="slider-btn prev" onclick="slideMove(event, this, -1)"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button class="slider-btn next" onclick="slideMove(event, this,  1)"><i class="fa-solid fa-chevron-right"></i></button>
+                      <div class="slider-dots">
+                        <div class="slider-dot active" onclick="slideTo(event, this, 0)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 1)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 2)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 3)"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="project-card" onclick="handleCardClick(event, this)">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i data-lucide="smartphone" width="32" height="32"></i>
+            </div>
+            <div class="project-info">
+              <h3>MakeItReal</h3>
+              <div class="project-desc-lines">
+                <div class="project-desc-line"></div>
+                <div class="project-desc-line"></div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Kotlin</span>
+                <span class="tag">Jetpack Compose</span>
+                <span class="tag">MapTiler</span>
+                <span class="tag">AR</span>
+              </div>
+            </div>
+            <div class="project-arrow">
+              <i data-lucide="arrow-right" width="20" height="20"></i>
+            </div>
+          </div>
+
+          <a class="project-github-link" href="https://github.com/amel555k/MakeItReal" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+
+          <div class="project-details">
+            <div class="project-details-inner">
+              <div class="project-details-content">
+                <div class="project-details-body">
+                  <div class="project-details-text">
+                    <p>In progress...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+
+      </div>
+    </section>
+
+    <section id="about">
+      <span class="section-label">A bit more</span>
+      <h2 class="section-title">About Me</h2>
+      <hr class="section-divider" />
+      <div class="about-grid fade-in">
+        <div class="about-text">
+          <p>
+            I'm a second-year Software Engineering student from Travnik, Bosnia, currently
+            studying at the university in Zenica. Coming from a small city, I've always been
+            driven by curiosity and a passion for building things that actually work and look great.
+          </p>
+          <p>
+            I have a particular interest in mobile app design and development, though at the core
+            of everything I do lies a strong preference for backend logic and well-structured
+            functionality. I enjoy thinking through how systems work under the hood just as much
+            as crafting a clean user interface.
+          </p>
+          <p>
+            When I'm not writing code, you'll find me outdoors — whether that's cycling through
+            the countryside, hitting the gym, or simply enjoying what nature around Travnik has
+            to offer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="padding-bottom: 6rem;">
+      <span class="section-label">Get in touch</span>
+      <h2 class="section-title">Let's work together</h2>
+      <hr class="section-divider" />
+      <div class="contact-card fade-in">
+        <div class="contact-icon-wrap">
+          <i data-lucide="user-circle-2" width="36" height="36"></i>
+        </div>
+        <div class="contact-text">
+          <a href="mailto:amel.kolasevic.24@size.ba" class="btn-primary">
+            Contact Me <i data-lucide="arrow-right" width="16" height="16"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-socials">
+        <a class="social-link" href="https://github.com/amel555k" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/amel-kolasevi%C4%87-7a7657359/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="social-link" href="mailto:amel.kolasevic.24@size.ba" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 Amel Kolasević. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Back to top">
+    <i data-lucide="chevron-up" width="20" height="20"></i>
+  </button>
+
+  <script src="main.js"></script>
+  <script type="module" src="firebase.js"></script>
+</body>
+</html>
