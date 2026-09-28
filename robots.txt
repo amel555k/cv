@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amel.kolasevic.com/sitemap.xml
