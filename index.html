@@ -253,7 +253,7 @@
         <div class="project-card" onclick="handleCardClick(event, this)">
           <div class="project-card-header">
             <div class="project-icon">
-              <i data-lucide="smartphone" width="32" height="32"></i>
+              <img src="images/seharacloud/ikonica.svg" alt="SeharaCloud icon" width="64" height="64">
             </div>
             <div class="project-info">
               <h3>Sehara Cloud</h3>
@@ -284,8 +284,46 @@
               <div class="project-details-content">
                 <div class="project-details-body">
                   <div class="project-details-text">
-                    <p>In progress...</p>
+                   <p>SeharaCloud Mobile is a native Android application designed to seamlessly interact with a self-hosted media cloud, bringing personal music, video, document, and photo libraries straight to mobile devices. Built with a modern MVVM architecture and StateFlow, the app features background audio playback with lock-screen controls, media streaming, and an integrated multi-mode video player. It includes a built-in document viewer with zoom capabilities, an intuitive photo gallery with full-screen viewing, and custom locale-aware sorting to ensure seamless navigation across all media types.</p>
+                    
                   </div>
+
+                       <div class="project-slider-col" onclick="event.stopPropagation()">
+                    <div class="project-slider" data-count="12">
+                      <div class="slider-track-wrapper">
+                        <div class="slider-track">
+                          <img src="images/seharacloud/homescreen.jpg" alt="SeharaCloud homepage" />
+                          <img src="images/seharacloud/musichomescreen.jpg" alt="SeharaCloud"/>
+                          <img src="images/seharacloud/musicplayer.jpg" alt="SeharaCloud"/>
+                          <img src="images/seharacloud/musiclist.jpg" alt="SeharaCloud"/>
+                          <img src="images/seharacloud/artistscreen.jpg" alt="SeharaCloud"/>
+                          <img src="images/seharacloud/artistlistscreen.jpg" alt="SeharaCloud"/>
+                          <img src="images/seharacloud/videohomescreen.jpg" alt="SeharaCloud"/>
+                          <img src="images/seharacloud/videoplayer.jpg" alt="SeharaCloud"/>
+                          <img src="images/seharacloud/photogrid.jpg" alt="SeharaCloud"/>
+                          <img src="images/seharacloud/photoviewer.jpg" alt="SeharaCloud"/>
+                          <img src="images/seharacloud/docshomescreen.jpg" alt="SeharaCloud"/>
+                          <img src="images/seharacloud/docsviewer.jpg" alt="SeharaCloud"/>
+                        </div>
+                      </div>
+                      <button class="slider-btn prev" onclick="slideMove(event, this, -1)"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button class="slider-btn next" onclick="slideMove(event, this,  1)"><i class="fa-solid fa-chevron-right"></i></button>
+                      <div class="slider-dots">
+                        <div class="slider-dot active" onclick="slideTo(event, this, 0)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 1)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 2)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 3)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 4)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 5)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 6)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 7)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 8)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 9)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 10)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 11)"></div>
+                      </div>
+                    </div>
+                  </div> 
                 </div>
               </div>
             </div>
@@ -362,6 +400,64 @@
           </div>
         </div>
 
+
+
+        <div class="project-card" onclick="handleCardClick(event, this)">
+          <div class="project-card-header">
+           <div class="project-icon">
+              <img src="images/laptopitravnik/ikonica.png" alt="LaptopiTravnik" icon width="128" height="64">
+            </div>
+            <div class="project-info">
+              <h3>LaptopiTravnik</h3>
+              <div class="project-desc-lines">
+                <div class="project-desc-line"></div>
+                <div class="project-desc-line"></div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Inkscape</span>
+                <span class="tag">SketchUp</span>
+              </div>
+            </div>
+            <div class="project-arrow">
+              <i data-lucide="arrow-right" width="20" height="20"></i>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="project-details-inner">
+              <div class="project-details-content">
+                <div class="project-details-body">
+                  <div class="project-details-text">
+                    <p>LaptopiTravnik is a local shop based in Travnik specializing in refurbished laptops. As part of a school project, I was responsible for the visual identity of the business — designing a two-sided promotional brochure that presents the shop's offer in a clean and professional layout, built entirely in Inkscape.</p>
+                    <p>Alongside the brochure, I modeled a 3D representation of a ThinkPad laptop in SketchUp, complete with a custom LaptopiTravnik sticker, intended to serve as a visual asset for the brand's promotional materials.</p>
+                  </div>
+                  <div class="project-slider-col" onclick="event.stopPropagation()">
+                    <div class="project-slider" data-count="4">
+                      <div class="slider-track-wrapper">
+                        <div class="slider-track">
+                          <img src="images/laptopitravnik/brosuraPrvaStrana.svg" alt="LaptopiTravnik brochure front side" />
+                          <img src="images/laptopitravnik/brosuraDrugaStrana.svg" alt="LaptopiTravnik brochure back side" />
+                          <img src="images/laptopitravnik/laptop1.png" alt="LaptopiTravnik ThinkPad 3D model" />
+                          <img src="images/laptopitravnik/laptop2.png" alt="LaptopiTravnik ThinkPad 3D model keyboard" />
+                        </div>
+                      </div>
+                      <button class="slider-btn prev" onclick="slideMove(event, this, -1)"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button class="slider-btn next" onclick="slideMove(event, this,  1)"><i class="fa-solid fa-chevron-right"></i></button>
+                      <div class="slider-dots">
+                        <div class="slider-dot active" onclick="slideTo(event, this, 0)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 1)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 2)"></div>
+                        <div class="slider-dot"        onclick="slideTo(event, this, 3)"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
         <div class="project-card" onclick="handleCardClick(event, this)">
           <div class="project-card-header">
             <div class="project-icon">
@@ -423,60 +519,6 @@
           </div>
         </div>
 
-        <div class="project-card" onclick="handleCardClick(event, this)">
-          <div class="project-card-header">
-            <div class="project-icon">
-              <i data-lucide="blocks" width="32" height="32"></i>
-            </div>
-            <div class="project-info">
-              <h3>LaptopiTravnik</h3>
-              <div class="project-desc-lines">
-                <div class="project-desc-line"></div>
-                <div class="project-desc-line"></div>
-              </div>
-              <div class="project-tags">
-                <span class="tag">Inkscape</span>
-                <span class="tag">SketchUp</span>
-              </div>
-            </div>
-            <div class="project-arrow">
-              <i data-lucide="arrow-right" width="20" height="20"></i>
-            </div>
-          </div>
-
-          <div class="project-details">
-            <div class="project-details-inner">
-              <div class="project-details-content">
-                <div class="project-details-body">
-                  <div class="project-details-text">
-                    <p>LaptopiTravnik is a local shop based in Travnik specializing in refurbished laptops. As part of a school project, I was responsible for the visual identity of the business — designing a two-sided promotional brochure that presents the shop's offer in a clean and professional layout, built entirely in Inkscape.</p>
-                    <p>Alongside the brochure, I modeled a 3D representation of a ThinkPad laptop in SketchUp, complete with a custom LaptopiTravnik sticker, intended to serve as a visual asset for the brand's promotional materials.</p>
-                  </div>
-                  <div class="project-slider-col" onclick="event.stopPropagation()">
-                    <div class="project-slider" data-count="4">
-                      <div class="slider-track-wrapper">
-                        <div class="slider-track">
-                          <img src="images/laptopitravnik/brosuraPrvaStrana.svg" alt="LaptopiTravnik brochure front side" />
-                          <img src="images/laptopitravnik/brosuraDrugaStrana.svg" alt="LaptopiTravnik brochure back side" />
-                          <img src="images/laptopitravnik/laptop1.png" alt="LaptopiTravnik ThinkPad 3D model" />
-                          <img src="images/laptopitravnik/laptop2.png" alt="LaptopiTravnik ThinkPad 3D model keyboard" />
-                        </div>
-                      </div>
-                      <button class="slider-btn prev" onclick="slideMove(event, this, -1)"><i class="fa-solid fa-chevron-left"></i></button>
-                      <button class="slider-btn next" onclick="slideMove(event, this,  1)"><i class="fa-solid fa-chevron-right"></i></button>
-                      <div class="slider-dots">
-                        <div class="slider-dot active" onclick="slideTo(event, this, 0)"></div>
-                        <div class="slider-dot"        onclick="slideTo(event, this, 1)"></div>
-                        <div class="slider-dot"        onclick="slideTo(event, this, 2)"></div>
-                        <div class="slider-dot"        onclick="slideTo(event, this, 3)"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         
 
