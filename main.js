@@ -6,7 +6,17 @@ lucide.createIcons();
 
     function handleCardClick(event, card) {
       if (event.target.closest('.project-details-body')) return;
+      
+      const isExpanding = !card.classList.contains('expanded');
       card.classList.toggle('expanded');
+
+      if (isExpanding) {
+        setTimeout(() => {
+          const yOffset = -90; 
+          const y = card.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }, 150);
+      }
     }
 
     function getSliderState(slider) {
